@@ -12,7 +12,7 @@ int CountNum(int userNum)
 {
     int i = 0;// счетчик
 
-    while (userNum > 1)// пока введенное число больше 1
+    while (userNum >= 1)// пока введенное число больше 1
     {
         userNum /= 10;// убираем разряд
         i++;// счетчик + 1
