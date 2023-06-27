@@ -8,7 +8,7 @@ int minValue = Prompt("Введите минимальное число диап
 int maxValue = Prompt("Введите максимальное число диапазона в массиве: ");
 int[] array = GetArray(size, minValue, maxValue);
 PrintArray(array);
-Console.Write("-> ");
+Console.Write(" -> ");
 ReplaceEl(array);
 
 
@@ -31,17 +31,21 @@ int[] GetArray(int size, int minValue, int maxValue)// заполнение ма
 
 void PrintArray(int[] arr)// печать массива
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write($"{arr[i]} ");
     }
+    Console.Write("]");
 
 }
 
 void ReplaceEl(int[] array)
 {
+    Console.Write("[");
     foreach (int el in array)// цикл будет проходить по всем элементам массива
     {
         Console.Write($"{el * -1} ");
     }
+    Console.Write("]");
 }
