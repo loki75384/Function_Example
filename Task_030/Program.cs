@@ -10,18 +10,18 @@ PrintArray(randomBinaryArray);
 int[] RandomBinaryArray()// [] - массив типа int
 {
     int[] array = new int[ARRAYSIZE];// слева создали массив = справа указали его размер
-    Random random = new Random();// обьект рандомного числа
+    Random random = new Random();// создаем обьект класса рандом
 
     for (int i = 0; i < ARRAYSIZE; i++)// цикл подбирающий рандомное значение
-        array[i] = random.Next(0, 2);
+        array[i] = random.Next(0, 2);// заполняем массив
 
-    return array;
+    return array;// возвращаем массив
 }
 
 void PrintArray(int[] array)
 {
-    foreach (var element in array)
-        Console.Write($"{element} ");
+    foreach (var element in array)// foreach - берет элемент массива
+        Console.Write($"{element} ");// выводит элемент на консоль
 
     Console.WriteLine();
 }
