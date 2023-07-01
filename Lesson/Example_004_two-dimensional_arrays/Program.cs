@@ -24,9 +24,9 @@ PrintArray(matrix);
 
 void FillArray(int[,] matr)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
+    for (int i = 0; i < matr.GetLength(0); i++)// строки GetLength(0)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)
+        for (int j = 0; j < matr.GetLength(1); j++)// столбцы GetLength(1)
         {
             matr[i, j] = new Random().Next(1, 10);// [1, 10)
         }
