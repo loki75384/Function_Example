@@ -6,8 +6,8 @@
 int N = Convert.ToInt32(Console.ReadLine());// ввод числа N
 Console.WriteLine($"{Range(N)}");
 
-string Range(int n)
-{
+string Range(int n)// Так как здесь строковый тип, числа склеиваются в обратном порядке
+{                  // называется стэк
     if (n == 1)
         return "1";
     return Range(n-1) + ", " + Convert.ToInt32(n);
